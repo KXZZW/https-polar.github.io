@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2C6E49);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+        .button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: #388E3C;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Verification Successful</h1>
+    <p class="message">Your account has been successfully verified. You are now ready to proceed with using our services.</p>
+    
+    <!-- Button to go back or continue -->
+    <a href="/" class="button">Go to Dashboard</a>
+
+    <script>
+        // Example of key validation logic (it can be a real API call or session check in a real app)
+        let isVerified = true;  // Set to true or false based on actual verification
+
+        if (!isVerified) {
+            document.querySelector('.message').textContent = "Verification failed. Please try again.";
+            document.querySelector('h1').textContent = "Verification Failed";
+            document.querySelector('.button').textContent = "Retry";
+        }
+    </script>
+
+</body>
+</html>
