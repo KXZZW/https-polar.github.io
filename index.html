@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Website</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f2937, #3b82f6);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .subscriptions {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #111827;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #3b82f6;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .card ul li {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+
+    .card ul li i {
+      color: #10b981;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #3b82f6;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Polarized Cheats</h1>
+    <p>Download the latest tools, unlock premium features, and dominate your gameplay!</p>
+  </header>
+
+  <section class="subscriptions">
+    <!-- Free Plan -->
+    <div class="card">
+      <h3>Free Plan</h3>
+      <ul>
+        <li><i class="material-icons">check_circle</i> Basic ESP Features</li>
+        <li><i class="material-icons">check_circle</i> Limited Access</li>
+        <li><i class="material-icons">check_circle</i> Community Support</li>
+      </ul>
+      <a class="button" href="https://discord.gg/JsuC57GNHu" target="_blank">Join Discord</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="card">
+      <h3>Premium Plan</h3>
+      <ul>
+        <li><i class="material-icons">check_circle</i> Advanced Camlock</li>
+        <li><i class="material-icons">check_circle</i> Unlimited ESP</li>
+        <li><i class="material-icons">check_circle</i> Fast Updates</li>
+        <li><i class="material-icons">check_circle</i> Exclusive Community</li>
+      </ul>
+      <a class="button" href="https://discord.gg/JsuC57GNHu" target="_blank">Subscribe Now</a>
+    </div>
+
+    <!-- Ultimate Plan -->
+    <div class="card">
+      <h3>Ultimate Plan</h3>
+      <ul>
+        <li><i class="material-icons">check_circle</i> All Features Unlocked</li>
+        <li><i class="material-icons">check_circle</i> Lifetime Access</li>
+        <li><i class="material-icons">check_circle</i> VIP Support</li>
+        <li><i class="material-icons">check_circle</i> Exclusive Beta Tools</li>
+      </ul>
+      <a class="button" href="https://discord.gg/JsuC57GNHu" target="_blank">Get Lifetime</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Polarized Cheats. All rights reserved.
+  </footer>
+</body>
+</html>
